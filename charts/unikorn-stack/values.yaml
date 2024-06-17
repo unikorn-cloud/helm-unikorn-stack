@@ -1,0 +1,19 @@
+global:
+  # Defines the cert-manager issuer to generate ingress TLS certificates with.
+  # You may use unikorn-issuer which is created by the "core" chart, but you
+  # will also need to uncomment the CA section below.
+  ingress:
+     clusterIssuer: letsencrypt-production
+
+  # Defines the self-signed global CA to use for all services for TLS validation.
+  # ca:
+  #   secretNamespace: cert-manager
+  #   secretName: unikorn-ca
+
+  # Defines the identity endpoint.
+  identity:
+    host: identity.unikorn-cloud.org
+
+  # Defines the region endpoint.
+  region:
+    host: region.unikorn-cloud.org
