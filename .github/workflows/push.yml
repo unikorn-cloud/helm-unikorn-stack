@@ -17,5 +17,7 @@ jobs:
       uses: azure/setup-helm@v3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Build Helm Chart
+      run: helm dependency update charts/unikorn-stack
     - name: Run Test
       run: make test
