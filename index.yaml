@@ -2,6 +2,33 @@ apiVersion: v1
 entries:
   unikorn-stack:
   - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2024-06-18T14:31:56.649796283Z"
+    dependencies:
+    - name: core
+      repository: https://unikorn-cloud.github.io/core
+      version: v0.1.49
+    - name: unikorn-identity
+      repository: https://unikorn-cloud.github.io/identity
+      version: v0.2.13
+    - name: unikorn-region
+      repository: https://unikorn-cloud.github.io/region
+      version: v0.1.13
+    - name: unikorn-kubernetes
+      repository: https://unikorn-cloud.github.io/kubernetes
+      version: v0.2.16
+    - name: unikorn-ui
+      repository: https://unikorn-cloud.github.io/ui
+      version: v0.2.5
+    description: A Helm chart for deploying Unikorn Cloud.
+    digest: 8b8adc1b43d8dc24ed38354fdda7838163b976a3d6121f0f6807290427f871cf
+    icon: https://raw.githubusercontent.com/unikorn-cloud/assets/main/images/logos/dark-on-light/icon.png
+    name: unikorn-stack
+    type: application
+    urls:
+    - https://github.com/unikorn-cloud/helm-unikorn-stack/releases/download/unikorn-stack-v0.1.2/unikorn-stack-v0.1.2.tgz
+    version: v0.1.2
+  - apiVersion: v2
     appVersion: v0.1.1
     created: "2024-06-17T14:23:05.437796936Z"
     dependencies:
@@ -28,4 +55,4 @@ entries:
     urls:
     - https://github.com/unikorn-cloud/helm-unikorn-stack/releases/download/unikorn-stack-v0.1.1/unikorn-stack-v0.1.1.tgz
     version: v0.1.1
-generated: "2024-06-17T14:23:05.437807115Z"
+generated: "2024-06-18T14:31:56.649807454Z"
